@@ -1,0 +1,39 @@
+<ion-side-menus enable-menu-with-back-views="true">
+  <ion-side-menu-content>
+    <ion-nav-bar class="bar-positive">
+      <ion-nav-back-button></ion-nav-back-button>
+      <ion-nav-buttons side="left">
+        <button class="button button-icon button-clear ion-navicon" menu-toggle="left"></button>
+      </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-nav-view name="side-menu21"></ion-nav-view>
+  </ion-side-menu-content>
+  <ion-side-menu side="left" id="side-menu21" style="background-color:#ACB3BB;">
+    <ion-header-bar class="bar-calm">
+      <div class="title">Menu</div>
+    </ion-header-bar>
+    <ion-content padding="true" class="side-menu-left has-header ">
+      <ion-list id="menu-list1">
+        <ion-item class="item-icon-left" id="menu-list-item1" ui-sref="menu.accessionHealth()" menu-close="">
+          <i class="icon ion-home"></i>Home</ion-item>
+        <ion-item class="item-icon-left" id="menu-list-item10" ui-sref="menu.signup()" menu-close="">
+          <i class="icon ion-android-add"></i>Sign Up</ion-item>
+        <ion-item class="item-icon-left" id="menu-list-item9" ui-sref="menu.login()" menu-close="">
+          <i class="icon ion-log-in"></i>Login or Out</ion-item>
+        <ion-item class="item-icon-left" id="menu-list-item2" ui-sref="menu.message()" menu-close="">
+          <i class="icon ion-email"></i>Message</ion-item>
+        <ion-item class="item-icon-left hours" id="menu-list-item3" ui-sref="menu.hours()" menu-close="">
+          <i class="icon ion-ios-timer-outline"></i>Hours</ion-item>
+      </ion-list>
+      <ion-list id="menu-list5">
+        <ion-item class="item-icon-left" id="menu-list-item8" ui-sref="menu.profile()" menu-close="">
+          <i class="icon ion-ios-person"></i>Profile</ion-item>
+        <ion-item class="item-avatar" id="menu-list-item12" ui-sref="menu.activity()" menu-close="">
+          <img src="img/3a0Sm9I9Qf2L1oZ96gJ1_logo-transparent.png">
+          <h2>Start Working</h2>
+          <p style="white-space:normal;">Get Jobs and Make Money!</p>
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-side-menu>
+</ion-side-menus>
