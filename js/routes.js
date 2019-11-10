@@ -121,10 +121,14 @@ angular.module('app.routes', [])
     }
   })
 
-  .state('page', {
+  .state('menu.page', {
     url: '/page14',
-    templateUrl: 'templates/page.html',
-    controller: 'pageCtrl'
+    views: {
+      'side-menu21': {
+        templateUrl: 'templates/page.html',
+        controller: 'pageCtrl'
+      }
+    }
   })
 
 $urlRouterProvider.otherwise('/side-menu21/page1')

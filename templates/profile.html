@@ -1,3 +1,24 @@
 <ion-view title="Profile" id="page8">
-  <ion-content padding="true" class="has-header"></ion-content>
+  <ion-content padding="true" class="has-header">
+    <form id="profile-form5" class="list">
+      <ion-toggle toggle-class="toggle-positive" ng-checked="true" id="profile-toggle2" name="Available">Available</ion-toggle>
+      <label class="item item-input item-stacked-label" id="profile-input10">
+        <span class="input-label">Name</span>
+        <input type="text" placeholder="">
+      </label>
+      <label class="item item-input item-stacked-label" id="profile-input12">
+        <span class="input-label">Address</span>
+        <input type="text" placeholder="">
+      </label>
+      <label class="item item-input item-stacked-label" id="profile-input13">
+        <span class="input-label">Email</span>
+        <input type="email" placeholder="">
+      </label>
+      <label class="item item-input item-stacked-label" id="profile-input14">
+        <span class="input-label">Phone</span>
+        <input type="tel" placeholder="">
+      </label>
+    </form>
+    <a ui-sref="menu.availability()" id="profile-button4" style="text-align:left;" class="button button-positive">Set Availability</a>
+  </ion-content>
 </ion-view>
