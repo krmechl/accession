@@ -101,14 +101,10 @@ angular.module('app.routes', [])
     controller: 'availability1Ctrl'
   })
 
-  .state('menu.reviewImage', {
+  .state('reviewImage', {
     url: '/page12',
-    views: {
-      'side-menu21': {
-        templateUrl: 'templates/reviewImage.html',
-        controller: 'reviewImageCtrl'
-      }
-    }
+    templateUrl: 'templates/reviewImage.html',
+    controller: 'reviewImageCtrl'
   })
 
   .state('menu.reviewDocumentation', {
