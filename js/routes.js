@@ -117,12 +117,22 @@ angular.module('app.routes', [])
     }
   })
 
-  .state('menu.page', {
+  .state('menu.database', {
     url: '/page14',
     views: {
       'side-menu21': {
-        templateUrl: 'templates/page.html',
-        controller: 'pageCtrl'
+        templateUrl: 'templates/database.html',
+        controller: 'databaseCtrl'
+      }
+    }
+  })
+
+  .state('menu.quickUploader', {
+    url: '/page15',
+    views: {
+      'side-menu21': {
+        templateUrl: 'templates/quickUploader.html',
+        controller: 'quickUploaderCtrl'
       }
     }
   })
