@@ -9,12 +9,12 @@ angular.module('app.routes', [])
   $stateProvider
     
 
-      .state('menu.accessionHealth', {
+      .state('menu.labDataverse', {
     url: '/page1',
     views: {
       'side-menu21': {
-        templateUrl: 'templates/accessionHealth.html',
-        controller: 'accessionHealthCtrl'
+        templateUrl: 'templates/labDataverse.html',
+        controller: 'labDataverseCtrl'
       }
     }
   })
@@ -101,10 +101,14 @@ angular.module('app.routes', [])
     controller: 'availability1Ctrl'
   })
 
-  .state('reviewImage', {
+  .state('menu.reviewImage', {
     url: '/page12',
-    templateUrl: 'templates/reviewImage.html',
-    controller: 'reviewImageCtrl'
+    views: {
+      'side-menu21': {
+        templateUrl: 'templates/reviewImage.html',
+        controller: 'reviewImageCtrl'
+      }
+    }
   })
 
   .state('menu.reviewDocumentation', {
@@ -117,12 +121,12 @@ angular.module('app.routes', [])
     }
   })
 
-  .state('menu.database', {
+  .state('menu.labDataverse2', {
     url: '/page14',
     views: {
       'side-menu21': {
-        templateUrl: 'templates/database.html',
-        controller: 'databaseCtrl'
+        templateUrl: 'templates/labDataverse2.html',
+        controller: 'labDataverse2Ctrl'
       }
     }
   })
